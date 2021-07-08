@@ -1,11 +1,12 @@
 import java.util.Random;
 
 public class RandomNumbers {
-    public static void main(String[] args) {
+    int min = 30;
+    int max = 0;
+    public void init() {
 
         Random random = new Random();
-        int min = 30;
-        int max = 0;
+
         int sum = 0;
         while (sum < 5000) {
             int temp = random.nextInt(31);
@@ -18,15 +19,19 @@ public class RandomNumbers {
             if (temp < min) {
                 min = temp;
             }
+
         }
-            System.out.println("Najniższa wylosowania liczba to " + min + ".");
-            System.out.println("Najwyższa wylosowania liczba to " + max + ".");
-
-            System.out.println(sum);
-
-
-
     }
+    public int getMin() {
+        return min;
+    }
+
+    public int getMax(){
+        return max;
+    }
+
+
+
 }
 
 
