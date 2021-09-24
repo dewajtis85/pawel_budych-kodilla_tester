@@ -15,8 +15,13 @@ public class CarRace {
 
     }
     private static void doRace(Car car){
-        int speed  = 3 * car.increaseSpeed()  + 2 * car.decreaseSpeed();
-        System.out.println(speed);
+        car.increaseSpeed();
+        car.increaseSpeed();
+        car.increaseSpeed();
+        car.decreaseSpeed();
+        car.decreaseSpeed();
+        System.out.println(car.getSpeed());
+
     }
 
 }

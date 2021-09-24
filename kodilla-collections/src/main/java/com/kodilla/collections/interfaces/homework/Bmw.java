@@ -9,15 +9,15 @@ public class Bmw implements Car {
     }
 
     @Override
-    public int increaseSpeed() {
+    public void increaseSpeed() {
 
-        return speed + 25;
+        speed = speed + 25;
     }
 
     @Override
-    public int decreaseSpeed() {
+    public void decreaseSpeed() {
 
-        return speed - 15;
+        speed = speed - 15;
     }
     @Override
     public int getSpeed() {
